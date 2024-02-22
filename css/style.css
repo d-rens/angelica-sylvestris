@@ -1,0 +1,117 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif; /* Consider a more fitting font based on your design */
+}
+
+/* Navigation Bar */
+nav#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #3a5a40; /* Dark green, adjust based on design */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Hero Section */
+section.hero {
+    text-align: center;
+    background-color: #f4f4f4; /* Light grey, adjust based on design */
+    padding: 40px 20px;
+}
+
+section.hero img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Content Sections */
+section {
+    padding: 40px 20px;
+    border-bottom: 1px solid #ccc; /* Subtle separator, adjust as needed */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #3a5a40; /* Matching the navbar */
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+}
+
+.intro,
+.features article {
+    text-align: center;
+    padding: 20px;
+    transition: box-shadow 0.3s ease-in-out; /* Smooth transition for the shadow effect */
+}
+
+.features article:hover {
+    box-shadow: 0 16px 24px rgba(0, 0, 0, 0.2); /* Adjust shadow size and color as needed */
+}
+
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.features article {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.features h2,
+.features p {
+    color: #333;
+}
+
+img {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adjust values and color to fit your design */
+    border-radius: 8px; /* Optional: adds rounded corners */
+}
+
+.full-width-image img {
+    width: 100%;
+    height: auto;
+    display: block; /* Ensures the image spans the full width of its container */
+}
+
