@@ -133,10 +133,8 @@ img {
 .nav-links {
     display: flex;
     list-style: none;
-    /* Additional styling */
 }
 
-/* Mobile styles */
 @media (max-width: 768px) {
     .hamburger {
         display: block;
@@ -155,4 +153,3 @@ img {
         display: block;
     }
 }
-
