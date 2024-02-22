@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif; /* Consider a more fitting font based on your design */
+    font-family: sans-serif; /* Consider a more fitting font based on your design */
 }
 
 /* Navigation Bar */
@@ -113,5 +113,46 @@ img {
     width: 100%;
     height: auto;
     display: block; /* Ensures the image spans the full width of its container */
+}
+
+.bare {
+    text-decoration: none;
+}
+
+
+// hamburger menu
+/* Basic styling */
+.hamburger {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    /* Additional styling */
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+    }
+    .nav-links.active {
+        display: block;
+    }
+    .menu {
+        display: none;
+    }
+    .menu.active {
+        display: block;
+    }
 }
 
