@@ -3,8 +3,9 @@ body {
 }
 
 article {
-    padding 0em;
+    padding: 0em;
     margin: 3em;
+    max-width: 50em;
 }
 
 ul.topnav {
