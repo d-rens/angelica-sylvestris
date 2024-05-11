@@ -9,21 +9,21 @@ article {
 }
 
 ul.topnav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #353B2E;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #353B2E;
 }
 
 ul.topnav li {float: left;}
 
 ul.topnav li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
 ul.topnav li a:hover:not(.active) {
@@ -39,14 +39,50 @@ ul.topnav li.right {
     float: right;
 }
 
+.hamburger-menu {
+    display: none; /* Hide by default */
+    background-color: #353B2E;
+}
+
+.mobile-menu {
+    display: none; /* Hide by default */
+}
+
+.mobile-menu.menu-active {
+    display: block; /* Show when active */
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* Adjustments for small screens */
 @media screen and (max-width: 600px) {
-  ul.topnav li.right, 
-  ul.topnav li {float: none;}
+    ul.topnav li.right,
+    ul.topnav li {
+        float: none;
+    }
+
+    /* Show the hamburger menu */
+    .hamburger-menu {
+        display: block;
+        text-align: right;
+        padding: 10px;
+    }
+
+    /* Hide the original navigation */
+    .nav {
+        display: none;
+    }
 }
 
 footer {
-  text-align: center;
-  padding: 3px;
-  background-color: #353B2E;
-  color: white;
+    text-align: center;
+    padding: 3px;
+    background-color: #353B2E; /* Background color for the footer */
+    color: white; /* Text color */
 }
+
+
