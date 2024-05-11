@@ -7,8 +7,7 @@ body {
 article {
   padding: 2em;
   /* Innenabstand des Artikels */
-  margin: 0 auto;
-  /* Zentrieren des Artikels horizontal */
+  margin: 2em auto 0; /* Margin oben erhöht */
   max-width: 50em;
   /* Maximale Breite des Artikels */
   text-align: justify;
