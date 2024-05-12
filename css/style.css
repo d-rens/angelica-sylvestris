@@ -1,6 +1,8 @@
 /* Setze den Seitenrand auf 0, um ein einheitliches Aussehen zu gewährleisten */
 body {
   margin: 0;
+  font-family: 'Arial', sans-serif;
+  /* Schriftart */
 }
 
 /* CSS für den Artikel */
@@ -14,8 +16,6 @@ article {
   /* Textausrichtung auf Blocksatz */
   line-height: 1.6;
   /* Zeilenhöhe für bessere Lesbarkeit */
-  font-family: 'Arial', sans-serif;
-  /* Schriftart */
   color: #333;
   /* Textfarbe */
   background-color: #f9f9f9;
@@ -214,3 +214,40 @@ footer {
   display: block;
   /* Kein überflüssiger Abstand um das Bild */
 }
+
+footer form {
+  margin: 2em;
+}
+/* Formular im Footer */
+/*footer form {
+/*  max-width: 400px;
+/*  margin: 0 auto;
+/*}
+/*
+/*footer label {
+/*  display: block;
+/*  margin-bottom: 10px;
+/*  font-weight: bold;
+/*}
+/*
+/*footer input[type="email"],
+/*footer input[type="checkbox"] {
+/*  width: 100%;
+/*  padding: 5px;
+/*  margin-bottom: 15px;
+/*  border: 1px solid #ccc;
+/*  border-radius: 5px;
+/*}
+/*
+/*footer input[type="submit"] {
+/*  width: 100%;
+/*  padding: 5px;
+/*  background-color: #007bff;
+/*  color: #fff;
+/*  border: none;
+/*  border-radius: 3px;
+/*  cursor: pointer;
+/*}
+/*
+/*footer #agree { display: inline; margin-left: 5px; }
+/*
