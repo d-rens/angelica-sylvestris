@@ -39,3 +39,8 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('Hamburger button:', hamburgerButton);
     console.log('Mobile menu:', mobileMenu);
 });
+
+document.querySelector('form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Verhindert das Standardverhalten des Formulars
+    document.getElementById('confirmation').style.display = 'block'; // Zeigt die Bestätigungsnachricht an
+});

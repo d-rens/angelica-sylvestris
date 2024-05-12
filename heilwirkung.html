@@ -59,8 +59,22 @@
                 </div>
         </article>
 
-
         <footer>
+            <form action="subscribe.html" method="post"> <!-- Aktion und Methode des Formulars -->
+                <label for="email">E-Mail-Adresse:</label> <!-- Label für das E-Mail-Feld -->
+                <input type="email" id="email" name="email" required> <!-- E-Mail-Eingabefeld -->
+                <br><br>
+                <input type="checkbox" id="agree" name="agree" required> <!-- Ankreuzkästchen für AGB -->
+                <label for="agree">Ich akzeptiere die AGB.</label> <!-- Label für das Ankreuzkästchen -->
+                <br><br>
+                <input type="submit" value="Abschicken"> <!-- Schaltfläche zum Absenden des Formulars -->
+            </form>
+        
+            <!-- Bestätigungsnachricht -->
+            <div id="confirmation" style="display: none;">
+                <p>Vielen Dank für Ihr Abonnement!</p>
+            </div>
+        
             <p>Alle Rechte vorbehalten &#169; 2024</p>
         </footer>
     </body>
