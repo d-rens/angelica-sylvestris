@@ -215,6 +215,7 @@ footer {
   /* Kein überflüssiger Abstand um das Bild */
 }
 
+/* Marginale, sodass das Formular nicht zu nah am Rahmen des Footers ist */
 footer form {
   margin: 2em;
 }

@@ -1,47 +1,54 @@
 <!DOCTYPE html>
 <html lang="de">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" type="image/png" href="bilder/logo.png"> 
-        <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" title="no title" charset="utf-8">
-        <title>Hauptseite</title>
-    </head>
 
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angelica sylvestris</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
 
+<body>
 
-            <div class="container sticky">
-                <!--<div class="logo">Your Logo</div>-->
-                <nav class="nav">
-                    <ul class="topnav">
-                        <li><a class="active" href="index.html">Home</a></li>
-                        <li><a href="galerie.html">Galerie</a></li>
-                        <li><a href="heilwirkung.html">Heilwirkung</a></li>
-                        <li><a href="inhaltsstoffe.html">Inhaltsstoffe</a></li>
-                        <li><a href="mythen.html">Mythen</a></li>
-                        <li class="right"><a href="about.html">&Uuml;ber Uns</a></li>
-                    </ul>
-                </nav>
-                <div class="hamburger-menu">
-                    <button class="hamburger-button">&#9776;</button> <!-- Unicode for hamburger icon -->
-                </div>
+    <!-- Header-Bereich -->
+    <header>
+        <div class="container">
+            <h1>Angelica sylvestris</h1>
+            <!-- Navigation für Desktop-Ansicht -->
+            <nav class="desktop-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="galerie.html">Galerie</a></li>
+                    <li><a href="heilwirkung.html">Heilwirkung</a></li>
+                    <li><a href="inhaltsstoffe.html">Inhaltsstoffe</a></li>
+                    <li><a href="mythen.html">Mythen</a></li>
+                    <li class="right"><a href="about.html">Über Uns</a></li>
+                </ul>
+            </nav>
+            <!-- Hamburger-Menü für mobile Ansicht -->
+            <div class="hamburger-menu">
+                <button class="hamburger-button">&#9776;</button>
             </div>
-        </header>
+        </div>
+    </header>
 
-        <!-- Mobile menu -->
-        <div class="mobile-menu sticky">
+    <!-- Mobiles Menü -->
+    <div class="mobile-menu sticky">
+        <div class="container">
             <ul class="topnav">
                 <li><a class="active" href="index.html">Home</a></li>
                 <li><a href="galerie.html">Galerie</a></li>
                 <li><a href="heilwirkung.html">Heilwirkung</a></li>
                 <li><a href="inhaltsstoffe.html">Inhaltsstoffe</a></li>
                 <li><a href="mythen.html">Mythen</a></li>
-                <li class="right"><a href="about.html">&Uuml;ber Uns</a></li>
+                <li class="right"><a href="about.html">Über Uns</a></li>
             </ul>
         </div>
+    </div>
 
-        <article>
+    <!-- Hauptinhalt -->
+    <article>
+        <div class="container">
             <h1>Willkommen auf unserer Website über Angelica sylvestris!</h1>
             <p>Von Informationen über ihre Herkunft bis hin zu praktischen Anwendungen - hier finden Sie alles, was Sie über
                 diese faszinierende Pflanze wissen müssen.</p>
@@ -53,32 +60,39 @@
                 Heilpraktiker oder einfach nur neugierig sind - hier finden Sie alles, was Sie über diese faszinierende Pflanze
                 wissen müssen.</p>
             <p><a href="about.html">Erfahren Sie mehr über uns</a></p>
+            <!-- Galerie-Element -->
             <div class="gallery-item">
                 <img src="bilder/angelica-sylvestris.jpg" alt="Angelica sylvestris in einer Landschaft">
             </div>
-        </article>
+        </div>
+    </article>
 
-
-        <footer>
-            <form method="post"> <!-- Aktion und Methode des Formulars -->
-                <label for="email">E-Mail-Adresse:</label> <!-- Label für das E-Mail-Feld -->
-                <input type="email" id="email" name="email" required> <!-- E-Mail-Eingabefeld -->
+    <!-- Footer-Bereich -->
+    <footer>
+        <div class="container">
+            <!-- Anmeldeformular -->
+            <form method="post">
+                <label for="email">E-Mail-Adresse:</label>
+                <input type="email" id="email" name="email" required>
                 <br><br>
-                <input type="checkbox" id="agree" name="agree" required> <!-- Ankreuzkästchen für AGB -->
-                <label for="agree">Ich akzeptiere die AGB.</label> <!-- Label für das Ankreuzkästchen -->
+                <input type="checkbox" id="agree" name="agree" required>
+                <label for="agree">Ich akzeptiere die AGB.</label>
                 <br><br>
-                <input type="submit" value="Abschicken"> <!-- Schaltfläche zum Absenden des Formulars -->
+                <input type="submit" value="Abschicken">
             </form>
-        
-            <!-- Bestätigungsnachricht -->
+            <!-- Bestätigungsmeldung -->
             <div id="confirmation" style="display: none;">
                 <p>Vielen Dank für Ihr Abonnement!</p>
             </div>
-        
-            <p>Alle Rechte vorbehalten &#169; 2024</p>
-        </footer>
+            <!-- Copyright-Hinweis -->
+            <p>Alle Rechte vorbehalten © 2024</p>
+        </div>
+    </footer>
 
-        <script src="index.js" charset="utf-8"></script>
+    <!-- JavaScript-Datei -->
+    <script src="index.js" charset="utf-8"></script>
 
-    </body>
+</body>
+
 </html>
+
